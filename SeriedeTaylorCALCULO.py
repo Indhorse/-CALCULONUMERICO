@@ -9,17 +9,7 @@ def taylor_series(f, x0, x, n):
     return resultado
 
 def derivada_n(f, x0, n):
-    """
-    Calcula la derivada de orden n de una función en un punto.
-
-    Parámetros:
-    f (función): función a derivar
-    x0 (float): punto en el que se desea calcular la derivada
-    n (int): orden de la derivada
-
-    Retorna:
-    float: derivada de orden n de la función en el punto x0
-    """
+  
     if n == 0:
         return f(x0)
     else:
