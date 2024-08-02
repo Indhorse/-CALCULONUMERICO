@@ -1,18 +1,7 @@
 import math
 
 def metodo_trapecio(f, a, b, n):
-    """
-    Método del trapecio para aproximar la integral definida de una función.
-
-    Parámetros:
-    f (función): función a integrar
-    a (float): límite inferior de la integral
-    b (float): límite superior de la integral
-    n (int): número de subintervalos
-
-    Retorna:
-    float: aproximación de la integral definida
-    """
+  
     h = (b - a) / n
     x = [a + i * h for i in range(n + 1)]
     y = [f(xi) for xi in x]
