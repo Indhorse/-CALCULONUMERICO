@@ -2,19 +2,7 @@ import math
 
 
 def newton_raphson(f, df, x0, tol=1e-5, max_iter=100):
-    """
-    Método de Newton-Raphson para encontrar raíces de una función.
-
-    Parámetros:
-    f (función): función a la que se le busca la raíz
-    df (función): derivada de la función f
-    x0 (float): aproximación inicial de la raíz
-    tol (float, opcional): tolerancia para la aproximación (default: 1e-5)
-    max_iter (int, opcional): número máximo de iteraciones (default: 100)
-
-    Retorna:
-    float: aproximación de la raíz
-    """
+    
     x = x0
     for _ in range(max_iter):
         x_next = x - f(x) / df(x)
